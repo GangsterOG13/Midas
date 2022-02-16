@@ -9,26 +9,8 @@ class BestScene: PerentScene {
         gameSettings.loadScores()
         places = gameSettings.highscore
         
-//        let background = SKSpriteNode(imageNamed: "backgroundMenu2")
-//        background.anchorPoint = CGPoint(x: 0.0, y: 0.0)
-//        background.size = self.size // растянули фон на весь экран
-//        background.zPosition = 0
-//        self.addChild(background) // добавили фон на нашу сцену
-        
-//
-//        let header = ButtonNode(titled: "best", backgroundName: "header_background", fontSize: nil)
-//        header.position = CGPoint(x: self.frame.midX + 10, y: self.frame.midY + 250)//размещаем по середине
-//        header.zPosition = 1
-//        self.addChild(header)//добавляем на сцену
-        
         setHeader(withName: "top 3", andBackground: "scores2", positionY: 150, positionX: nil)
 
-        
-        
-        
-
-      
-        
         //кнопка back
         let back = ButtonNode(titled: "back", backgroundName: "button_background", fontSize: nil)
         back.position = CGPoint(x: self.frame.midX, y: self.frame.minY + 70)

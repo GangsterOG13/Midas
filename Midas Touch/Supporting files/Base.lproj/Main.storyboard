@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ka-OB-YJx">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -12,7 +12,7 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Space_Shot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BV1-FR-VrT" customClass="GameViewController" customModule="Midas_Touch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
         <!--Support View Controller-->
         <scene sceneID="fqm-Lm-yLx">
             <objects>
-                <viewController storyboardIdentifier="SupportViewController" id="MjR-j9-67G" customClass="SupportViewController" customModule="Space_Shot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SupportViewController" id="MjR-j9-67G" customClass="SupportViewController" customModule="Midas_Touch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SgR-3H-45H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,8 +84,35 @@
             </objects>
             <point key="canvasLocation" x="122" y="779"/>
         </scene>
+        <!--Start View Controller-->
+        <scene sceneID="r9Z-cd-8Ww">
+            <objects>
+                <viewController id="4ka-OB-YJx" customClass="StartViewController" customModule="Midas_Touch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wxX-7c-QKd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundMenu2" translatesAutoresizingMaskIntoConstraints="NO" id="Jr9-Q4-oKg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RPM-j4-8fu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Jr9-Q4-oKg" secondAttribute="bottom" id="0hH-au-W36"/>
+                            <constraint firstItem="Jr9-Q4-oKg" firstAttribute="top" secondItem="wxX-7c-QKd" secondAttribute="top" id="dl2-sd-HRC"/>
+                            <constraint firstItem="Jr9-Q4-oKg" firstAttribute="leading" secondItem="RPM-j4-8fu" secondAttribute="leading" id="sZz-8t-kLW"/>
+                            <constraint firstItem="Jr9-Q4-oKg" firstAttribute="trailing" secondItem="RPM-j4-8fu" secondAttribute="trailing" id="tId-aZ-9Iq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5su-ln-KnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49.230769230769226" y="-571.56398104265395"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="backgroundMenu2" width="1242" height="2208"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

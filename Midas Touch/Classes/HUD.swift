@@ -1,10 +1,3 @@
-//
-//  HUD.swift
-//  gametest1
-//
-//  Created by Roma Bogatchuk on 09.01.2022.
-//
-
 import SpriteKit
 
 class HUD: SKNode {

@@ -50,6 +50,7 @@
 		88FDBCC7278BA3890082D5CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FDBCC5278BA3890082D5CE /* Assets.xcassets */; };
 		88FDBCCA278BAE3A0082D5CE /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FDBCC9278BAE3A0082D5CE /* GameOver.swift */; };
 		88FDBCD0278BB9E20082D5CE /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FDBCCF278BB9E20082D5CE /* GameSettings.swift */; };
+		E09F91B727BD262900222D20 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F91B627BD262900222D20 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		88FDBCC5278BA3890082D5CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88FDBCC9278BAE3A0082D5CE /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
 		88FDBCCF278BB9E20082D5CE /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		E09F91B627BD262900222D20 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			children = (
 				88FDBC77278A59A20082D5CE /* GameViewController.swift */,
 				8781B2DC2790262A003D1E7E /* SupportViewController.swift */,
+				E09F91B627BD262900222D20 /* StartViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				88FDBCD0278BB9E20082D5CE /* GameSettings.swift in Sources */,
 				88FDBC8D278A76570082D5CE /* PlayerGod.swift in Sources */,
 				88FDBC8B278A69440082D5CE /* Cloud.swift in Sources */,
+				E09F91B727BD262900222D20 /* StartViewController.swift in Sources */,
 				88FDBC78278A59A20082D5CE /* GameViewController.swift in Sources */,
 				8781B2DD2790262A003D1E7E /* SupportViewController.swift in Sources */,
 				88FDBCA0278B2BDD0082D5CE /* BluePowerUp.swift in Sources */,
@@ -436,6 +440,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -490,6 +495,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -501,7 +507,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J2GLR26RLC;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -516,7 +522,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Roman.Bogatchuk.gametest2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.midas.touch;
 				PRODUCT_NAME = "Midas Touch";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -531,7 +537,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J2GLR26RLC;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -546,7 +552,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Roman.Bogatchuk.gametest2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.midas.touch;
 				PRODUCT_NAME = "Midas Touch";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

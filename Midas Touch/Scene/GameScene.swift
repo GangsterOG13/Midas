@@ -59,10 +59,8 @@ class GameScene: PerentScene {
         
         configureStartScene()
         spawnStars()
-       // spawnPlanets()
         player.performFly()
         spawnPowerUp()
-        //spawnEnemy()
         spawnEnemies()
         createHUD()
         
@@ -108,7 +106,6 @@ class GameScene: PerentScene {
             let waitAction = SKAction.wait(forDuration: 1.0) // задержка появления самолетов
             let spawnEnemy = SKAction.run { [unowned self] in
         
-                //создаем вражеский самолет
                 Enemy.timeHorizontal = 3.0 - CGFloat(self.hud.score) / 1000
                 Enemy.timeVertical = 5.0 - CGFloat(self.hud.score) / 1000
                 let enemy = Enemy(enemyTexture: texture)
@@ -119,7 +116,6 @@ class GameScene: PerentScene {
             }
             let spawnAction = SKAction.sequence([waitAction, spawnEnemy])
             let repeatAction = SKAction.repeat(spawnAction, count: 1)
-            // let spawnForever = SKAction.repeatForever(spawnAction)
             
             self.run(repeatAction)
             
@@ -128,7 +124,6 @@ class GameScene: PerentScene {
 
     
     fileprivate func spawnStars() {
-        
         
         let spawnStarWait = SKAction.wait(forDuration: TimeInterval(1 - (Double(self.hud.score) / 300)))
         let spawnStarAction = SKAction.run {
@@ -140,6 +135,7 @@ class GameScene: PerentScene {
         let spawnStarSequence = SKAction.sequence([spawnStarWait, spawnStarAction])
         let spawnStarForever = SKAction.repeatForever(spawnStarSequence)
         run(spawnStarForever)
+        
     }
     
     fileprivate func spawnPlanets() {
@@ -154,6 +150,7 @@ class GameScene: PerentScene {
         let spawnBirdSequence = SKAction.sequence([spawnBirdWait, spawnBirdAction])
         let spawnBirdForever = SKAction.repeatForever(spawnBirdSequence)
         run(spawnBirdForever)
+        
     }
     
     fileprivate func configureStartScene() {
@@ -165,15 +162,6 @@ class GameScene: PerentScene {
         
         let screen = UIScreen.main.bounds // размер экрана
         
-        
-        
-//        let bird1 = Bird.populate(at: CGPoint(x: 100, y: 200))
-//        self.addChild(bird1)
-//        
-//        let bird2 = Bird.populate(at: CGPoint(x: self.size.width - 100, y: self.size.height - 200))
-//        self.addChild(bird2)
-        
-        //создали самолет
         player = PlayerGod.populate(at: CGPoint(x: screen.size.width / 2, y: 100))
         self.addChild(player)
         

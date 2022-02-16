@@ -62,7 +62,7 @@ class Enemy: SKSpriteNode {
     }
     
     fileprivate func preloadArray() {
-        Assets.shared.enemy_1Atlas
+//        Assets.shared.enemy_1Atlas
         var array = [SKTexture]()
         for i in stride(from: 1, through: 4, by: 1) {
             let number = String(format: "%02d", i)

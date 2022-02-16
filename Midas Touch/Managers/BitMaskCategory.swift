@@ -30,13 +30,3 @@ extension SKPhysicsBody {
     }
     
 }
-
-
-//struct BitMackCategory {
-//
-//    static let player: UInt32  = 0x1 << 0 // 000000...1  1
-//    static let enemy: UInt32   = 0x1 << 1   // 000000...10  2
-//    static let powerUp: UInt32 = 0x1 << 2   // 000000...100  4
-//    static let shot: UInt32    = 0x1 << 3   // 000000...1000  8
-//
-//}

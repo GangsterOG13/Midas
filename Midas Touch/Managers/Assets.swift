@@ -12,11 +12,11 @@ class Assets {
     
     func preloadAssets(){
         
-        yellowShotAtlas.preload { print("yellowShotAtlas preload")}
-        enemy_1Atlas.preload { print("enemy_1Atlas preload")}
-        greenPowerUpAtlas.preload { print("greenPowerUpAtlas preload")}
-        bluePowerUpAtlas.preload { print("bluePowerUpAtlas preload")}
-        godPlaneAtlas.preload { print("godPlaneAtlas preload")}
+        yellowShotAtlas.preload { }
+        enemy_1Atlas.preload { }
+        greenPowerUpAtlas.preload { }
+        bluePowerUpAtlas.preload { }
+        godPlaneAtlas.preload { }
         
     }
     

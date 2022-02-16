@@ -7,9 +7,6 @@ class OptionsScene: PerentScene {
     
     override func didMove(to view: SKView) {
         
-        //        let header = ButtonNode(titled: "pause", backgroundName: "header_background")
-        //        header.position = CGPoint(x: self.frame.midX, y: self.frame.midY + 150)//размещаем по середине
-        //        self.addChild(header)//добавляем на сцену
         isMusic = gameSettings.isMusic
         isSound = gameSettings.isSound
         

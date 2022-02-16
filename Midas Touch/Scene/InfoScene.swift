@@ -5,16 +5,7 @@ class InfoScene: PerentScene {
     var places: [Int]!
     
     override func didMove(to view: SKView) {
-        
-
-//        let header = ButtonNode(titled: "best", backgroundName: "header_background")
-//        header.position = CGPoint(x: self.frame.midX, y: self.frame.midY + 250)//размещаем по середине
-//        self.addChild(header)//добавляем на сцену
-        
-       // setHeader(withName: "Info", andBackground: "scores", positionY: nil, positionX: nil)
-        
-        
-        
+    
         //кнопка back
         let infoText =
         """
@@ -55,30 +46,6 @@ class InfoScene: PerentScene {
         back.zPosition = 3
         back.setScale(0.8)
         addChild(back)
-        
-        //кнопка back
-//        let infoText = "back"
-//        let info = ButtonNode(titled: infoText, backgroundName: "button_background")
-//        info.position = CGPoint(x: self.frame.midX, y: self.frame.minY )
-//        info.name = "info"
-//        info.size = CGSize(width: self.frame.size.width - 80, height: self.frame.size.height - 300)
-//        info.label.name = "info"
-//
-//        addChild(back)
-            
-//        // сортируем масив результатов и оставлем 3 лучших
-//        let topPlaces = places.sorted{$0 > $1}.prefix(3)
-        
-        //лейбл на кнопке
-//        
-//            let l = SKLabelNode(text: "info") // текст
-//            l.fontColor = UIColor(red: 219 / 255, green: 226 / 255, blue: 215 / 255, alpha: 1.0) // цвет
-//            l.fontName = "AmericanTypewriter-Bold"//шрифт
-//            l.fontSize = 24//размер
-//        
-//            l.position = CGPoint(x: self.frame.midX, y: self.frame.midY )
-//            addChild(l)
-        
         
     }
     
